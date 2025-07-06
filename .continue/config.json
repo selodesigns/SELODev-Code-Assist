@@ -1,0 +1,26 @@
+{
+  "models": [
+    {
+      "title": "Mistral Project Planner",
+      "provider": "ollama",
+      "model": "mistral",
+      "apiBase": "http://localhost:11434",
+      "role": "planner"
+    },
+    {
+      "title": "Qwen Coder 7B (Ollama)",
+      "provider": "ollama",
+      "model": "qwen2-coder-7b",
+      "apiBase": "http://localhost:11434",
+      "role": "codegen",
+      "postprocess": "python3 ~/.continue/code_validator/code_validator.py"
+    }
+  ],
+  "tabAutocompleteModel": {
+    "title": "Qwen Inline",
+    "provider": "ollama",
+    "model": "qwen2-coder-7b",
+    "apiBase": "http://localhost:11434"
+  },
+  "defaultModel": "qwen2-coder-7b"
+}
